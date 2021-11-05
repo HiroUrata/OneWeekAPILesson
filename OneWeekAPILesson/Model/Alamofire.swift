@@ -16,7 +16,7 @@ class Alamofire{
 
 extension Alamofire{
     
-    public func getAPIDatas(searchCategoryId:String,compltion: @escaping ([AlamofireDataModel]?,Error?) -> Void){
+    public func getAPIDatas(compltion: @escaping ([AlamofireDataModel]?,Error?) -> Void){
         
         let apiKey = ""
         
@@ -33,19 +33,14 @@ extension Alamofire{
                     
                     if (data["result"][getCount]["rank"].string! != "" &&
                         data["result"][getCount]["mediumImageUrl"].string != "" &&
-                        data["result"][getCount]["recipeTitle"].string != "" &&
-                        data["result"][getCount]["recipeMaterial"][0].string != "") == true{
+                        data["result"][getCount]["recipeTitle"].string != "") == true{
                         
-                        for recipeMaterialCount in 0..<data["result"][getCount]["recipeMaterial"].count{
-                            
-                            recipeMaterialContents?.append(data["result"][getCount]["recipeMaterial"][recipeMaterialCount].string!)
-                        }
                         
                         afResultDataArray.append(AlamofireDataModel(rank: data["result"][getCount]["rank"].string,
                                                                     mediumImageUrl: data["result"][getCount]["mediumImageUrl"].string,
-                                                                    recipeTitle: data["result"][getCount]["recipeTitle"].string,
-                                                                    recipeMaterial: recipeMaterialContents))
+                                                                    recipeTitle: data["result"][getCount]["recipeTitle"].string))
                     }
+                    
                 }
                 return compltion(afResultDataArray,nil)
                 

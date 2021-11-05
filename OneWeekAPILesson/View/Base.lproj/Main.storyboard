@@ -39,12 +39,52 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="733" id="XXQ-XN-xwW"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="ana-OO-fYT">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="114"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="347" id="QfA-iz-4JA">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="347"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ana-OO-fYT" id="4ie-Qi-0Eg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QfA-iz-4JA" id="U87-4e-8jL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="347"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wGC-21-4Q2">
+                                                    <rect key="frame" x="94" y="59" width="227" height="198"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="198" id="Ph2-m0-N8V"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recipeTitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioS-hV-mSt">
+                                                    <rect key="frame" x="63" y="281" width="288" height="43"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="288" id="EjT-rv-apE"/>
+                                                        <constraint firstAttribute="height" constant="43" id="pn6-GZ-lC0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rankLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8G-g2-HXI">
+                                                    <rect key="frame" x="63" y="23" width="288" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="VBd-Nq-LJf"/>
+                                                        <constraint firstAttribute="height" constant="23" id="dBa-GL-43n"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="q8G-g2-HXI" firstAttribute="top" secondItem="U87-4e-8jL" secondAttribute="top" constant="23" id="7EJ-6o-lOL"/>
+                                                <constraint firstItem="wGC-21-4Q2" firstAttribute="top" secondItem="q8G-g2-HXI" secondAttribute="bottom" constant="13" id="D1W-rh-V3t"/>
+                                                <constraint firstAttribute="trailing" secondItem="ioS-hV-mSt" secondAttribute="trailing" constant="63" id="F0b-eB-biy"/>
+                                                <constraint firstItem="ioS-hV-mSt" firstAttribute="top" secondItem="wGC-21-4Q2" secondAttribute="bottom" constant="24" id="F4g-Kb-bUB"/>
+                                                <constraint firstAttribute="trailing" secondItem="q8G-g2-HXI" secondAttribute="trailing" constant="63" id="JBj-ED-oFs"/>
+                                                <constraint firstAttribute="trailing" secondItem="wGC-21-4Q2" secondAttribute="trailing" constant="93" id="K8p-Nu-g5l"/>
+                                                <constraint firstItem="q8G-g2-HXI" firstAttribute="leading" secondItem="U87-4e-8jL" secondAttribute="leading" constant="63" id="sEk-5d-Vn3"/>
+                                                <constraint firstItem="wGC-21-4Q2" firstAttribute="leading" secondItem="U87-4e-8jL" secondAttribute="leading" constant="94" id="uif-Dt-myp"/>
+                                                <constraint firstItem="ioS-hV-mSt" firstAttribute="leading" secondItem="U87-4e-8jL" secondAttribute="leading" constant="63" id="xXr-k4-DuW"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -76,6 +116,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

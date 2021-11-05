@@ -12,7 +12,6 @@ class TableViewCustomCell: UITableViewCell {
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var mediumImageView: UIImageView!
     @IBOutlet weak var recipeTitleLabel: UILabel!
-    @IBOutlet weak var recipeMaterialTextView: UITextView!
     
     
     override func awakeFromNib() {
@@ -37,6 +36,5 @@ class TableViewCustomCell: UITableViewCell {
         rankLabel.text = ""
         mediumImageView.image = UIImage(named: "")
         recipeTitleLabel.text = ""
-        recipeMaterialTextView.text = ""
     }
 }

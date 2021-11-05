@@ -15,7 +15,9 @@
 		54E10F492735036E00A2019E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E10F472735036E00A2019E /* LaunchScreen.storyboard */; };
 		54E10F522735040000A2019E /* TableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E10F502735040000A2019E /* TableViewCustomCell.swift */; };
 		54E10F532735040000A2019E /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E10F512735040000A2019E /* TableViewCustomCell.xib */; };
-		54E10F552735041800A2019E /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 54E10F542735041800A2019E /* Model */; };
+		54E10F5D27350A3600A2019E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E10F5B27350A3600A2019E /* Alamofire.swift */; };
+		54E10F5E27350A3600A2019E /* AlamofireDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E10F5C27350A3600A2019E /* AlamofireDataModel.swift */; };
+		54E10F6227350AF500A2019E /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E10F6127350AF500A2019E /* Indicator.swift */; };
 		A587507AE9784A8009D05082 /* Pods_OneWeekAPILesson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE51D7BA53B5C1223E667C5D /* Pods_OneWeekAPILesson.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +34,9 @@
 		54E10F4A2735036E00A2019E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54E10F502735040000A2019E /* TableViewCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCustomCell.swift; sourceTree = "<group>"; };
 		54E10F512735040000A2019E /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
-		54E10F542735041800A2019E /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		54E10F5B27350A3600A2019E /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		54E10F5C27350A3600A2019E /* AlamofireDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDataModel.swift; sourceTree = "<group>"; };
+		54E10F6127350AF500A2019E /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		EE51D7BA53B5C1223E667C5D /* Pods_OneWeekAPILesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneWeekAPILesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,32 +83,42 @@
 			children = (
 				54E10F3C2735036C00A2019E /* AppDelegate.swift */,
 				54E10F3E2735036C00A2019E /* SceneDelegate.swift */,
-				54E10F542735041800A2019E /* Model */,
-				54E10F582735050B00A2019E /* View */,
-				54E10F592735052000A2019E /* Controller */,
+				54E10F6027350A4E00A2019E /* Model */,
+				54E10F5F27350A4700A2019E /* View */,
+				54E10F5A27350A0F00A2019E /* Controller */,
 				54E10F472735036E00A2019E /* LaunchScreen.storyboard */,
 				54E10F4A2735036E00A2019E /* Info.plist */,
 			);
 			path = OneWeekAPILesson;
 			sourceTree = "<group>";
 		};
-		54E10F582735050B00A2019E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				54E10F422735036C00A2019E /* Main.storyboard */,
-				54E10F502735040000A2019E /* TableViewCustomCell.swift */,
-				54E10F512735040000A2019E /* TableViewCustomCell.xib */,
-				54E10F452735036E00A2019E /* Assets.xcassets */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		54E10F592735052000A2019E /* Controller */ = {
+		54E10F5A27350A0F00A2019E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				54E10F402735036C00A2019E /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E10F5F27350A4700A2019E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E10F422735036C00A2019E /* Main.storyboard */,
+				54E10F502735040000A2019E /* TableViewCustomCell.swift */,
+				54E10F512735040000A2019E /* TableViewCustomCell.xib */,
+				54E10F6127350AF500A2019E /* Indicator.swift */,
+				54E10F452735036E00A2019E /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E10F6027350A4E00A2019E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54E10F5B27350A3600A2019E /* Alamofire.swift */,
+				54E10F5C27350A3600A2019E /* AlamofireDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C6F3FC7F7DB9A45CAECC101F /* Pods */ = {
@@ -176,7 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E10F552735041800A2019E /* Model in Resources */,
 				54E10F492735036E00A2019E /* LaunchScreen.storyboard in Resources */,
 				54E10F462735036E00A2019E /* Assets.xcassets in Resources */,
 				54E10F532735040000A2019E /* TableViewCustomCell.xib in Resources */,
@@ -234,6 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E10F412735036C00A2019E /* ViewController.swift in Sources */,
+				54E10F6227350AF500A2019E /* Indicator.swift in Sources */,
+				54E10F5D27350A3600A2019E /* Alamofire.swift in Sources */,
+				54E10F5E27350A3600A2019E /* AlamofireDataModel.swift in Sources */,
 				54E10F3D2735036C00A2019E /* AppDelegate.swift in Sources */,
 				54E10F522735040000A2019E /* TableViewCustomCell.swift in Sources */,
 				54E10F3F2735036C00A2019E /* SceneDelegate.swift in Sources */,

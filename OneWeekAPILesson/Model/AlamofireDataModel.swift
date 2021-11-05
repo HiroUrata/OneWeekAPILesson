@@ -10,5 +10,4 @@ struct AlamofireDataModel{
     let rank:String?
     let mediumImageUrl:String?
     let recipeTitle:String?
-    let recipeMaterial:[String]?
 }
